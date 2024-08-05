@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        function redirectToRandomLink() {
+            const links = [
+                "https://www.naver.com/",
+                "https://www.youtube.com/"
+            ];
+
+            const randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="redirectToRandomLink()">Click here to visit a random site</a>
+</body>
+</html>
